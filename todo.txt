@@ -1,0 +1,11 @@
+Docker setup
+	provare a pushare l'immagine aggiornata
+
+Inserire le Resources dell'Introduzione
+
+Aggiungere esempi di ML (con attenzione a CNN e RNN)
+
+Esempio completo di Jupyter Notebook
+
+
+
