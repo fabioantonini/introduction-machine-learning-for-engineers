@@ -7,5 +7,9 @@ Aggiungere esempi di ML (con attenzione a CNN e RNN)
 
 Esempio completo di Jupyter Notebook
 
+Preparare slides Introduction
+
+Citare Deepelearning.ai per le slides prese da TF1
+
 
 
