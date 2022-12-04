@@ -11,7 +11,5 @@ come inserire i riferimenti ai Jupyter notebooks nel corso delle lezioni
 
 aggiungere considerazioni pro e contro del ML
 
-paragrafo applicazioni del ML (da Geron)
-
 cambiare la copertina della dispensa
 
