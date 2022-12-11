@@ -13,3 +13,6 @@ aggiungere considerazioni pro e contro del ML
 
 cambiare la copertina della dispensa
 
+Da Gosnar 
+	prendere la sppiegazione di recall/precision.
+	https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
