@@ -5,11 +5,7 @@ Aggiungere esempi di ML (con attenzione a CNN e RNN)
 
 Esempio completo di Jupyter Notebook
 
-Preparare slides Introduction
-
-come inserire i riferimenti ai Jupyter notebooks nel corso delle lezioni
-
-aggiungere considerazioni pro e contro del ML
+Preparare slides Introduction/LinearRegression
 
 cambiare la copertina della dispensa
 
