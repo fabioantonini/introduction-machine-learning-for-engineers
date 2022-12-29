@@ -10,5 +10,5 @@ Preparare slides Introduction/LinearRegression
 cambiare la copertina della dispensa
 
 Da Gosnar 
-	prendere la sppiegazione di recall/precision.
+	prendere la spiegazione di recall/precision.
 	https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
