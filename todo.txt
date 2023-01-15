@@ -14,3 +14,10 @@ Da Gosnar
 	https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 
 aggiungere un capitolo end-to-end project
+
+Notebook e dataset per Linear Regression
+https://risk-engineering.org/
+https://risk-engineering.org/linear-regression-analysis/
+https://archive.ics.uci.edu/ml/datasets/Image+Recognition+Task+Execution+Times+in+Mobile+Edge+Computing
+
+sns.regplot(data=df, x="cigarettes", y="CVD");
