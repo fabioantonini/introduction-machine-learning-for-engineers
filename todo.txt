@@ -20,4 +20,4 @@ https://risk-engineering.org/
 https://risk-engineering.org/linear-regression-analysis/
 https://archive.ics.uci.edu/ml/datasets/Image+Recognition+Task+Execution+Times+in+Mobile+Edge+Computing
 
-sns.regplot(data=df, x="cigarettes", y="CVD");
+esempi scikit learn di linear/logistic regression con chatgpt
