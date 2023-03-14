@@ -5,8 +5,6 @@ Aggiungere esempi di ML (con attenzione a CNN e RNN)
 
 Esempio completo di Jupyter Notebook
 
-Preparare slides Introduction/LinearRegression
-
 cambiare la copertina della dispensa
 
 Da Gosnar 
@@ -21,3 +19,29 @@ https://risk-engineering.org/linear-regression-analysis/
 https://archive.ics.uci.edu/ml/datasets/Image+Recognition+Task+Execution+Times+in+Mobile+Edge+Computing
 
 esempi scikit learn di linear/logistic regression con chatgpt
+
+
+docker exec -it --user root 744b06ba7b20  /bin/bash
+
+
+prendere i notebooks di C2/W2 e C2/W3 tramite manu
+
+C2_W1: ho saltato questi capitoli
+\subsection{How neural networks are implemented efficiently}
+\subsection{Matrix multiplication}
+\subsection{Matrix multiplication rules}
+\subsection{Matrix multiplication code}
+
+https://community.deeplearning.ai/t/error-importing-tensorflow-under-windows-10/38999
+python -c "import tensorflow as tf; print(tf.GIT_VERSION, tf.VERSION)"
+https://github.com/lakshayg/tensorflow-build
+https://www.tensorflow.org/install/source?hl=it
+
+bazelisk
+https://github.com/bazelbuild/bazelisk
+docker cp .\bazelisk-linux-amd64 744b06ba7b20:/tmp
+
+cd tensorflow
+bazelisk-linux-amd64 build --config=native_arch_linux //tensorflow/tools/pip_package:build_pip_package
+
+https://discuss.tensorflow.org/t/error-building-tensorflow-2-11-with-gcc-9-4/14749
