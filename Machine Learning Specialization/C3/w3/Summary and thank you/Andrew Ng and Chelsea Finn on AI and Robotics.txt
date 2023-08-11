@@ -1,0 +1,438 @@
+[MUSIC] Thanks for joining me here at Stanford
+University, with Professor Chelsea Finn, who is with both the computer science and
+the electrical engineering departments. Chelsea is a research lab
+that does cutting edge work, applying machine learning,
+especially reinforcement learning, to a range of robotics applications. So I'm really glad to
+have you here Chelsea. >> Happy to be here. >> So, I know that before you settled
+into working on computer science and machine learning, you actually considered
+a lot of career options ranging from biology to aerospace to computer
+science and electric engine. So, what made you make this choice? Yeah, so I was always drawn to engineering
+because I really like solving puzzles and solving problems. And when I arrived at MIT for
+my undergraduate, I was considering different
+engineering majors. And what really drew me first
+to computer science was that, it gives you a lot of flexibility in terms
+of the different paths that you can do. Essentially computer science empowers you
+to build lots of different things with software, with code and with that,
+I could eventually go into biology. If I wanted to, I could go into robotics, there's all sorts of really exciting
+things you can do with computer science. So that landed me in computer science and
+then once I decided on that, I really enjoyed a lot of the math that goes behind
+AI like probability and statistics. And I was also really drawn to this
+challenge of how can we build a computer, that can see like humans do. That can perceive things and images and
+can take actions in the world, yeah. >> So it was almost as if your choice
+was if you do computer science, you could do anything. And so that makes it, I guess what mason
+said software is eating the world. And I think Jen Huang said
+AI is eating software, and it feels like when you
+work in machine learning, you get to poke your nose in all
+corners of the world and do fun things. >> Absolutely, I think machine learning
+is a really exciting place to be. And I mentioned that computer science is
+very flexible and opens lots of doors, and I think that machine learning
+is very similar to that. There's so many different things you
+can do with machine learning, and so many different applications. I'm really excited about
+applications in robotics. But, we've seen lots of
+different applications in language processing in biology and
+in other fields. >> So your specialization,
+of the many things you do, a large fraction of your
+work is in robotics. And, when people look at
+the popular media or social media, you see these videos of for example,
+humanoid robots jumping up and down and doing and
+they do incredible things. How should one think about what robots
+really can and cannot do today? Because there are these amazing demo
+videos that looks like can do almost anything. But, how should one decide
+what is actually doable? >> Yeah, the videos that we see
+online from Boston Dynamics for example of robots doing back flips or
+doing Parkour and of course. Are really impressive,
+because they look really complicated. It's really easy in some ways
+anthropomorphize the robot and think that if you saw a person doing that,
+that would be very impressive. And they would probably be able to do
+lots of other really impressive things. And the catch is that in
+robotics in those videos and in many impressive
+demonstrations of robotics. The robot was set up for
+that particular environment, and it was tuned to do well with that set up. And if you change something
+about the environment, about the setup about what it's supposed
+to do, then the demo no longer works. The the robot will fall flat. So, the really the big challenge with
+robotics is getting robots to generalize, to be able to handle lots of different
+scenarios with lots of different objects, with lots of different environments. And right now, robots can do things in
+very controlled environments like in factories and
+they are very useful in factories. And, what I'm really excited about and
+what's really hard in robotics is giving them the flexibility in generality
+that of the skills that humans can do. >> Just to dig a little bit more
+into the specific one off one environment thing before
+going into generality. When someone sees the next cool robotics
+demo, how should they think about it or what the questions they
+should ask themselves? >> Yeah, so I think that the first
+question that someone can ask is, what will happen if something
+changes in the environment. What will happen if you move a block or if you put the robot in a slightly
+different position when it starts. Oftentimes you don't see those kinds
+of tests of the system's robustness or resilience to those variations. And, if you do start seeing those those
+demos where actually you kind of poke the robot, or you change the environment
+a little bit and it still works. That's when I think we
+can be really impressed. >> Cool, so a lot of your work has
+specifically been on making robots robust, to generalize or
+apply to lots of different environments. Just tell me more about that work and
+how you approach this problem. >> Definitely, so in other areas of
+machine learning we've seen huge successes where we take a very large data set. Like you take all of Wikipedia, and
+you train a neural network to be able to model the data in that very large and
+broad data set. And in robotics, one thing that I'm
+excited about is if we can somewhat replicate that sort of success. If we can collect a similarly
+diverse data set and allow robots to learn from that data set. Now, this is challenging for a couple of
+reasons, one is that we don't already have an existing data set, we don't have
+Wikipedia for robot motor control. There isn't data lying on the internet, of how exactly to move a robot's
+fingers to tie shoes, for example. So we don't have tons of diverse
+data already, but fortunately, robots in principle should be
+able to collect data themselves. And, that is an opportunity because
+it means that we might be able to collect a large amount of diverse data, by allowing the robots to
+collect their own data. But it's also a challenge because it means
+that we need to figure out how to allow robots to collect data that's useful,
+and diverse. And so, there's lots of different things
+that we explore in terms of approaching this problem, some is allowing
+robots to collect their own data in lots of different environments. Some is showing demonstrations to a robot,
+of how to perform a task. We've also explored a little bit of
+how to use data from the internet, like videos of humans to show
+a robot how to do a task. And incorporating all of these different
+data sources to allow robots to, well, once they've hopefully seen very
+diverse data sets like this. They might be able to generalize not
+just to the one scenario that they saw, in a lab environment but
+possibly the real world in the long term. >> One of the things we've seen is
+machine learning reinforcement learning, our rooms are great at
+playing video games. Because you can get, essentially infinite
+data playing a video game with yourself. What do you think of
+the role of simulation. Yeah, so we've definitely
+seen lots of successes of AI systems doing very well at video games. And simulation is somewhat similar
+because we can collect lots of data in simulation as well. One challenge with simulation is that, the physics in the simulation engine are
+not exactly the same as the real world. We know generally the laws of physics but,
+the friction on a table, for example, may not be exactly known. Or the friction between
+the grooves on a cap and a water bottle if you try
+to **** a water bowl, modeling that is very difficult and
+there are it's prone to errors. And then when you try to train a policy in
+that simulator to close a water bottle, for example, And
+then deploy it in the real world. It actually doesn't work because
+of those errors in the simulation. So I think it's a promising data source. But because of these inaccuracies and
+this challenge of transferring something that was learned in
+simulation to the real world. I don't think it's the only
+approach that we should bet on. I think that we should try to
+leverage lots of real data. >> And I want to be surprising
+to someone watching this, why is it so
+hot to simulate the real world? It's just a lot of bottles
+two pieces of plastic and somehow we can't seem to figure out what's
+going on with two pieces of plastic. >> Yeah.
+So I think that there's lots of challenges. I mean, first is just modeling
+the low level physics. A lot of simulation engines out there, they will model time at a certain and
+in reality, time is much more fluid than operating at like 100 Hertz or
+something like that. And to actually accurately model these
+things, you may need to actually model at a very fine time discrimination and
+that gets very expensive. And then your simulator may actually
+be slower than actually running things in the real world. And then it's no longer useful in
+comparison to collecting data in the real world. And then the second thing is
+the real world is super diverse. And so actually creating the content
+of all of the kind of objects that you encounter even in everyday life. When you're eating lunch or
+when you're kind of cleaning up a table, creating all of that content is
+actually a really manual effort. And usually in machine learning systems,
+you want to kind of do away with the things that require
+a lot of manual effort. And try to automate and automate things so
+that they can be scaled up. >> Yeah. And in fact, in terms of
+the diversity of environments today, factories work great in robots where
+the environment is relatively controlled, relatively few unexpected
+things happening on average. I know some of your work has been looking
+to send robots into people's homes and do things in people's kitchens. That's one of the most uncontrolled
+environments in the world to say, you say a bit more about that. >> Yeah, absolutely. So I think that the controlled
+environments are the ones where we've seen a lot of success. And in the long term, I would love
+to see robots that could go into any environment like a home or
+an office and be useful to people. And to do that, we want to actually start
+collecting data in those environments. Often time in robotics research, we collect the data once in a lab
+environment and learn based on that data. But if we only collect real data in a lab, we're never going to actually get
+the robots out into the real world. So we're trying to start data collection
+efforts, actually putting robots into the real world so that they see the
+diversity of all these different homes. Rather than kind of the narrow
+data that you see in the lab. >> So I want to get your gut about one
+thing which is you talked about wanting to get a robot to go into a brand new
+home and make a bowl of cereal, right? Challenging to liquids, cereal fridge. What's your gut about how
+many different homes, how many different kitchens
+a robot will need to see. So how many training examples do you
+think a robot will need in order to have a good chance of doing on the N
+plus first on the next kitchen? >> Yeah.
+So I think it really depends
+on how hard the task is. If the task is as simple as I don't know,
+maybe pressing a button on the microwave, then I think that you may not
+need quite as much data for that. But I think even for a new kitchen,
+you probably need still quite a large number of kitchens in order to generalize
+to a new one, maybe 20 maybe 100. If it's a task that's more complex, like making a bowl of cereal, it's
+something that's super simple to people. But it's actually really hard for robots because there's lots
+of different steps involved. For that, I think you need more data. And probably also more kitchens as well,
+maybe in the thousands. And I also think that even if we had
+thousands of kitchens of data or tens of thousands might guess is that the
+problem still wouldn't be solved fully. We've seen applications like autonomous
+driving where there's tons of data and the problem isn't quite yet solved. So I think we also need to try to
+go beyond the data distribution and also allow robots to adapt on
+the fly in a new environment. >> Well, thousands, that's higher
+than my gut but that's interesting to see how it plays out and so
+on the theme of making robots more robust. I know a lot of your research
+work was also on meta learning or learning how to learn rather than us
+telling computer this is a learning algorithm to how they get a computer
+to even get better at learning. Can you say a bit about that. >> Yeah, absolutely. So, part of the motivation is that
+if a robot encounters a new kitchen, we don't want it to just run what
+it learned in that new kitchen. It may actually need to adapt and
+learn on the fly. It may need to, for example, if it's
+trying to open the door to a pantry and the door is a little bit different. It may need to take a little
+bit of experience and trial and error on that door in order
+to figure out how to open it. And we want to allow systems to do
+this sort of learning process on the fly at test time in new scenarios. And unfortunately, if you just run machine
+learning from scratch at test time on a very small amount of data
+that won't work very well. You need large amounts of data
+in order to learn something. So what metal learning tries to do is
+it tries to take experience in previous kitchens or previous tasks. And optimize for
+the ability to learn new things, the ability to learn new things based on
+having learned lots of previous things. >> So for example, what best learning
+rate which wish to adapt to new kitchen setting and
+lots of other things, one could tune. >> Yeah, absolutely. So the simplest setting is if
+you're only optimizing for one parameter,
+like the learning rate in a new situation. And in more complex metal learning
+algorithms, you can sort of optimize for the entire learning algorithm. >> So I think if you as one of the world
+experts in meta learning, in fact, if I remember this is a big
+part of your PhD thesis. Which you did way back with Peter,
+who was my PhD student at Standard. And so just say more about
+how meta learning works. >> Yeah.
+So there's a few different
+approaches to metal learning. But the approach that was in my PhD
+thesis was essentially putting a learning problem inside another learning problem. So it's actually forms
+this bilevel optimization, this two level learning problem where
+you are actually trying to optimize for all of the parameters in
+this inner learning problem. Such that you could achieve faster
+learning or more efficient learning. >> Yeah, I remember reading some
+early papers and very impressive. So lots of software algorithms,
+machine learning algorithms, reinforcement learning algorithms. One part of your work is
+you also run a robotics lab with robots running around robot arms. I'm curious for someone that has not yet
+spent a lot of time in a robotics lab. Can you tell us what is it like if
+a student were to join your lab, what's it like to show up and work in
+the morning and work in a robotics lab? >> Yeah.
+So in the lab, it's not all that different from running machine learning
+experiments where you run code, you try to train a model and
+then evaluate that model. But in addition to those everyday things, there's also interfacing
+with the real robot. So oftentimes a lot of projects
+might start with the simulation and start iterating on algorithms. Using a physics engine that might involve
+actually kind of designing aspects of the simulation to test
+the hypotheses you want to test. And also sometimes products won't
+involve that simulation step or maybe you've already
+iterated in simulation. And on the real robot, there is everything
+from setting up the control stack. Such that you can actually command
+the robot to move to a certain position, to setting up the cameras,
+to collecting data with the robot. You might be collecting data by
+using like a V R controller, for example, to tell the robot to
+move to certain positions. And then also actually when it comes
+time to evaluate a model, it involves actually running that on the robot and
+seeing what the robot does in real life. It's a pretty fun process at least for me,
+I think it's very rewarding to actually see the robot do something rather
+than just see some numbers or some accuracy of your model. But it's also requires a little bit of
+persistence because robots can break down. You might have a motor that breaks, you
+may not have set up the camera correctly. It might be giving you all zeros for
+example. There's many more bugs that can come
+up than in a system without a robot. >> So, number of people have had
+experience debugging software and then there's debugging machine learning
+algorithms which has different practices and ideas. And then can you say a bit about what
+debugging hardware in a robotics lab is like? >> Definitely. I mean, in general, with debugging,
+you want to rule out possible sources of errors,
+possible sources of bugs and often times you might have a guess that
+it is from the software or the hardware. And from there, I think that many of
+the machine learning things will apply. You want to look at your data. And because a lot of the data is
+actually collected in the lab, it may not be from a data set, then there
+may be something tha is wrong about it. And you may want to actually look at
+the images that the robot is seeing, maybe visualize some of the features
+that your model has learned. I guess one thing that we did
+recently is we wanted to actually deploy a policy on
+multiple different robots. And so we would actually replay
+actions on a robot and make sure that the robot was reproducing a certain
+motion that we wanted it to reproduce. How you debug depends
+a lot on the problem. I don't know if there's any one way or any
+kind of single bug that comes up the most because there's all sorts
+of sources of bugs. But yeah, that gives us a little bit
+of a sense for what it looks like. >> And I thought one of the lovely and frustrating things about robotics as
+opposed to software is in software. If you make a mistake, you can always revert back to
+the early version of software. But that time that you do something and
+your robot breaks and then you go, boy, that's another two months of work or
+something to rebuild that. That's a unique experience in hardware. >> Definitely. And because we're doing a lot of
+work on the software side of things, we typically try to get robots that won't
+break, like nice high end robots so that we can worry more about the software
+and less about the hardware. But if there are cases where a robot might
+break, we try to get robots where you can pretty easily swap out parts
+where if one motor breaks, you could just swap in a new motor rather
+than having to repurpose the whole thing. But certainly there,
+there's lots of challenges that come up. >> Yeah.
+And you know,
+I used to fly autonomous helicopters. So every time a helicopter crash,
+fortunately, we manage to keep it safe and away from people, then this is a well
+frankly destroyed helicopter and then we have to just go build a new one but it's
+nice when you go to do that too often. >> Yeah.
+Fortunately, arms do not crash too much. >> I see.
+Yeah. Yeah, maybe I should have chosen,
+working on that instead isn't it. So in your robotics lab, one tool of choice that you've often
+used is reinforcement learning. Can you say a bit about the practical
+lessons, tips and tricks for how to apply reinforcement learning amazing
+algorithms to your heart by robots. >> Yeah.
+So, reinforcement learning is
+a really appealing framework for robotics because in principle,
+it would allow a robot to learn something completely on its own through trial and
+error from data that it collected itself. And so it's something that we're
+really excited about for that reason, but it's also really challenging for
+a number of reasons. So first reinforcement learning
+typically assumes that you're given some reward signal,
+some feedback. And if you're trying to learn how
+to play a game, like play a pong or another Atari game, you can just use
+the score as a reward function and just try to maximize your score. But the real world
+doesn't give you a score. It doesn't give the robot a score
+when it tries to learn something. And instead the robot might need
+to learn its own reward function. It might need to learn what it means to
+accomplish a task at the same time as also trying to learn how to accomplish
+that task in the physical world. So that's one big challenge and
+one way that we approach it. Another challenge is typically
+in this trial and error. >> And so how do you learn the reward? Like from a demonstration? How, how do you learn the reward? Yeah.
+>> So we learned it in a few different ways. We often give it at least give it some
+examples of what success looks like. And we also sometimes give it
+a full demonstration of this is an example of what we want you to do. And then you can get into techniques
+like inverse reinforcement learning, which you worked on a long
+time ago as well and actually try to invert
+the reinforcement learning process and try to figure out what reward
+function underlies this behavior. So beyond learning, reward functions, another challenge is autonomy in
+the process of reinforcement learning. So typically, you think of it as
+a trial-and-error process where you try to solve the task and
+then you want to try it again. And in between trying the task and
+trying it again, you need to somehow get back
+to some starting point. And maybe for example, if you're
+trying to learn how to do a back flip, trying it again will involve
+standing up after you fall down. But actually, sometimes learning that resetting
+behavior is also quite challenging. And there is this challenging interplay
+between learning how to do the task and also learning how to recover from all
+the ways that you failed at the task in the entire process of doing that. >> It's really automating the research
+process so that you run repeat experiments without having to lug a robot around
+every single time to put it back. >> Exactly. Yeah. >> Cool, really cool. And in fact, in your application
+of reinforcement learning, I think you're among the earliest
+researchers to do more or less or completely end to end robotics. End to end reinforcement learning. Can you say a bit about what that
+was like in the early days and why you went that route? >> Yeah.
+So at the start of my PhD, deep learning was just
+starting to become popular. After Alex Net was showing that you
+can do very well with deep neural networks trained end to end for
+computer vision. And I had just arrived at Berkeley for
+my phD. There were some people that were
+working on reinforcement learning with neural networks. And I was pretty excited about that work
+and I wanted to see in the past work, it was all blind. The robot wasn't using cameras in any way. And I wanted to see if we could learn
+a neural network that directly maps from the images taken by the robot's camera to
+the torques applied to the robots joints. And in that first project, it was a lot of work to try to
+actually get that initial result. But we were excited to see that we
+actually could get a single neural network that could learn something like
+screwing a cap on a bottle or putting a coat hanger on a coat rack with
+a single neural network mapping directly from pixels to torques. And it was a pretty exciting result. It was definitely very
+different from what the rest of the robotics community was working on. And I think the, the paper that we worked
+on was actually rejected twice because people didn't like deep learning,
+roboticists didn't like that these neural networks were very black box and
+you couldn't understand them. But eventually it got published and
+it was accepted. And now it's actually become a much more
+prominent paradigm in robotics where a lot more people are now trading neural
+networks to represent the policy, to represent how the robot chooses
+actions based on the camera images. >> I think that early work you did was
+quite visionary and set an important hope, set an important new direction for
+the field. What's your prediction for
+where this will go? Do you think the percentage of practical
+robotics work that this train end to end? How much do you think that
+will continue to go up or not? >> Yeah, I certainly think that it
+will continue to grow quite a bit. Still not all of the robotics research
+community is looking at these kinds of approaches, in part because there
+are useful techniques in control theory that are useful, especially in controlled
+scenarios, like we talked about. But I think that it will certainly grow. I think that especially as the machine
+learning field continues to make really impressive advances, I hope that that
+will convince more people that this sort of paradigm is really promising for
+robotics as well, especially in terms of handling the vast degree of variety in
+objects and environments in the world. In terms of looking forward, in terms
+of understanding what might happen in the next 10 or 20 years in robotics,
+one thing that I'm really excited about that we touched on a little bit, is trying
+to train robots on broader datasets. A lot of the field of robot learning
+is still collecting a dataset for a project in a lab and
+then training on that small data set. It's small because it has to be,
+because you collected it for that project. And I think if we imagine that if computer
+vision researchers had to collect image net for
+every single project that they did, they probably wouldn't be
+making that much progress. And so, my prediction at least for for the
+coming years is to move towards a paradigm where we reuse data sets a lot, we use
+much larger datasets, and ideally are kind of sharing data sets across institutions,
+across robot platforms. And scaling up the data that these
+systems are trained on such that they can generalize more broadly. >> That's an exciting vision. And how do we get there? For images, everyone uses PNG files,
+and GIF files, and JPEG files, so, the data is highly
+portable and highly shareable. If different research labs just
+have different pieces of hardware, how do you make that happen for robotics? >> Yeah, so, it's definitely challenging. The place that we're starting that
+I'm quite excited about is, first, trying to actually have a little bit of
+consensus, bring the community together to say, okay, let's start with this robot
+platform with roughly this setup so that we can at least standardize on some
+of it, and then try to collect lots and lots of diverse data on that
+fairly standardized platform. Start from there, and then if we're
+able to get some signs of life and some positive success from collecting
+a broad dataset with those standardized choices, then starting to standardize
+less and less and move on. Maybe the same robot but
+with a different control stack, and then maybe starting to move towards
+different versions of that robot, different grippers, and ultimately lots of
+different robots and lots of environments. >> Cool, yep, great,
+this is exciting vision. So, this is one of the things
+you're doing in robotics. Just looking more broadly, with all
+the work you do in reinforcement learning, some not even apply to robotics but
+other applications, where do you hope for enforcement learning and
+robotics will go in the next many years? >> Yeah, so, I think that, I mean, I'm hoping that it will move towards these
+reusable datasets and very broad datasets. I also think that even beyond robotics,
+I think that there's lots of other applications of reinforcement
+learning as well. So, for example, in some of our recent
+work, we applied reinforcement learning, and actually meta reinforcement learning,
+a combination of meta learning and reinforcement learning, to education
+to give feedback on student work, where students would program a game
+like Breakout and then the system would actually play the game and find the bugs
+that the students made and give them feedback on how to improve their program
+and how to continue to learn how to code. >> Now, that's very cool. In fact, robots are so visual, sometimes
+it's easy to forget that reinforcement learning is a general technique for
+decision making with delayed rewards. That's useful for
+many things other than robots. Frankly, when I see more robots, I used to try to get all my
+students to learn to solder. I don't know if that was a-
+>> I learned how to solder an undergrad, although I don't think I actually
+ever used that in my robotics work. Wow, I see. Maybe things have moved on,
+but I had to, yeah. >> I think we would just buy robots
+that didn't need some soldering. >> So, your journey has led
+you to do cutting edge work in reinforcement learning and robotics. I'm curious what advice you would have for someone looking to break into
+reinforcement learning or to robotics. Not everyone owns a cool robot,
+that an easy program, but how should someone get started? >> Yeah, my main advice would just
+be to try to get your feet wet, and just try to build something,
+try to program and code something up. There's lots of different
+things that you can do. And I think that learning by
+trying to build something, by trying to do something, is one of the coolest ways to learn
+because you have a certain goal in mind. >> But would you build something
+using a simulated robot or do you think you should
+just build a little robot? >> I think that starting with a simulated
+robot is probably the easiest and there's less of a learning curve and
+less things that you have to do, you don't have to go out and buy hardware. That said, I think that also trying to work a little bit with hardware
+right off the bat is great, and it definitely teaches you about how hard
+robotics is, robotics is really hard. But also, by kind of struggling
+to get the robot to do something, it makes it all that much more rewarding
+when it actually does something cool, when it does something
+that you wanted it to do. And, I don't know, some of the robots
+that we use are fairly expensive. But nowadays, there's actually lots of
+robots that are fairly inexpensive that people can buy, or you can kind of build
+your own robot by connecting wheels and a camera or maybe even a smartphone
+together to build something. I actually got started with LEGO
+robotics in middle school and you could also build robots out
+of LEGO and get started that way. >> Yes, actually, I remember I went to
+LEGO robotics competitions when I was in middle school or something. That was interesting set of experiences. So, to someone taking the machine
+learning specialization, if their goal is to work
+in enforcement learning and robotics, what else would
+you recommend they look at? What are the other resources
+you think would be helpful? >> Definitely, so there are resources
+in terms of just learning about reinforcement learning, and
+there are kind of courses online, there's also kind of course videos,
+there's textbooks like Sutton Barto. And so, those are lots of resources. I also think that there are lots of,
+I don't know, videos online, tutorials ,code bases, you can actually check out a physics
+engine like the Majko Physics Engine, which is freely available, and
+try to kind of explore with that. So, yeah, those are a few resources. There's also one thing that
+we use a lot to interface with robots is called
+the Robot Operating System, or ROS. And so,
+learning about that can also be useful. >> That came out of my research lab
+wayback working with with a garage. Yeah, good times. Sorry, I didn't mean to interrupt. >> Yeah, so, I think that those
+are some of the resources, and yeah, not too much more than that. >> Cool, yeah, very cool. With the world moving forward and
+evolving, it feels like the number of path for someone wanting to get involved
+in this is even growing and it probably gets a little bit easier every
+year for someone to enter this field. So, this is exciting time to be in. >> Yeah, definitely. >> Thanks for
+joining me here at Stanford University. I'm with Professor Chelsea Finn who
+is with both the computer science and the electrical engine departments, and
+leads a research group that does cutting edge work on applying
+reinforcement learning and machine learning to robotics and
+other applications. Thanks for joining us, Chelsea. >> Yeah, happy to be here. [MUSIC]
