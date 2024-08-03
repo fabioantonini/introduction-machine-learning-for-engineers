@@ -33,8 +33,7 @@ of a neuron is as a tiny little computer whose only job is to input
 one number or a few numbers, such as a price, and then
 to output one number or maybe a few other
 numbers which in this case is the probability of the T-shirt
-being a top seller. As I alluded in the
-previous video, a logistic regression
+being a top seller. A logistic regression
 algorithm is much simpler than what any biological neuron in your
 brain or mine does. Which is why the artificial
 neural network is such a vastly oversimplified
@@ -42,7 +41,9 @@ model of the human brain. Even though in
 practice, as you know, deep learning algorithms
 do work very well. Given this description
 of a single neuron, building a neural network now it just requires taking a bunch of these neurons and wiring them together or putting
-them together. Let's now look at a
+them together. 
+
+Let's now look at a
 more complex example of demand prediction. In this example, we're
 going to have four features to predict whether or not
 a T-shirt is a top seller. The features are the
@@ -242,4 +243,4 @@ neural network works. In the next video, let's take a look
 at how these ideas can be applied to other
 applications as well. In particular, we'll
 take a look at the computer vision application
-of face recognition. Let's go on to the next video.
+of face recognition.

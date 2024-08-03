@@ -1,3 +1,11 @@
+aggiungere figure al notebook Introduction
+rivedere il laboratorio sotto Lectures/PInn and Multi-agents: c'è un errore
+ragionare su una presentazione con i vari tipi di machine learning
+sviluppare un esempio veloce con scikit learn
+
+
+
+
 git pull da Laptop e configurare Anaconda, eseguire i notebook
 
 
