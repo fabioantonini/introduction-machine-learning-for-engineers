@@ -1,6 +1,12 @@
-aggiungere figure al notebook Introduction
-rivedere il laboratorio sotto Lectures/PInn and Multi-agents: c'è un errore
 ragionare su una presentazione con i vari tipi di machine learning
+
+Slides da fare
+Advice for Applying ML (C2_W3)
+Decision tree (C2_W4), finire di ascoltare l'audio
+Unsupervised Learning (C4)
+	C4_W1
+rivedere il laboratorio sotto Lectures/PInn and Multi-agents: c'è un errore
+
 
 
 
