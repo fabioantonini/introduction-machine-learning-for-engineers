@@ -1,10 +1,11 @@
 ragionare su una presentazione con i vari tipi di machine learning
+provare i laboratori di AdvancedMachineLearningTEchniques (C2_W3)
+aggiungere laboratorio per regression tree
 
 Slides da fare
 Advice for Applying ML (C2_W3)
 Decision tree (C2_W4), finire di ascoltare l'audio
-Unsupervised Learning (C4)
-	C4_W1
+Unsupervised Learning (C4) C4_W1
 rivedere il laboratorio sotto Lectures/PInn and Multi-agents: c'è un errore
 
 
