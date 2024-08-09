@@ -1,5 +1,3 @@
-# ChromaDB, Langchain, Mistral, Gradio, HuggingFace unstructured labs
-
 conda create --name llm-3.10 python=3.10
 
 conda activate llm-3.10
